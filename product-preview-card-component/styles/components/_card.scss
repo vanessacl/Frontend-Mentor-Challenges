@@ -1,0 +1,104 @@
+.card {    
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    display: flex; 
+    justify-content: center;       
+
+    @media(max-width: 767px) {
+        max-width: 343px;
+        height: auto;
+        flex-direction: column;  
+        justify-content: flex-start;        
+    }
+
+    .card-img {
+        width: 50%;
+        height: 450px;
+        border-radius: 10px 0 0 10px; 
+        background-image: url("../assets/image-product-desktop.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        image-rendering: auto;
+
+        @media(max-width: 767px) {
+            width: 100%;
+            height: 240px;
+            background-image: url("../assets/image-product-mobile.jpg");
+            background-size: cover;
+            border-radius: 10px 10px 0 0;            
+        }
+    }
+
+    .card-copy {
+        width: 50%;
+        padding: 32px;
+        text-align: left;    
+        background: $white;     
+        border-radius: 0 10px 10px 0;
+
+        @media(max-width: 767px) {
+            width: 100%;
+            padding: 24px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        h1 {
+            font-family: "Montserrat-medium";
+            font-size: 21px;
+            line-height: 14.63px;
+            letter-spacing: 5px;
+            color: $darkGrayishBlue;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+
+            @media(max-width: 767px) {
+                font-size: 12px;
+                margin-bottom: 12px;
+            }
+        }
+
+        h2 {
+            font-family: "Fraunces-bold";
+            font-size: 32px;
+            line-height: 32px;
+            color: $veryDarkBlue;
+            margin-bottom: 24px;
+
+            @media(max-width: 767px) {                
+                margin-bottom: 16px;
+            }
+        }
+
+        .product-desc {
+            font-family: "Montserrat-medium";
+            font-size: 14px;
+            line-height: 23px;
+            color: $darkGrayishBlue;
+            margin-bottom: 29px;
+
+            @media(max-width: 767px) {                
+                margin-bottom: 24px;
+            }
+        }
+
+        .product-price {
+            font-family: "Fraunces-bold";
+            font-size: 32px;
+            line-height: 32px;
+            color: $darkCyan;   
+            display: flex;
+            align-items: center;         
+
+            span {
+                font-family: "Montserrat-medium";
+                font-size: 13px;
+                line-height: 23px;               
+                color: $darkGrayishBlue;
+                margin-left: 19px;
+                text-decoration-line: line-through;
+            }
+        }
+    }
+}

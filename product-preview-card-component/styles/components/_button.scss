@@ -1,0 +1,38 @@
+.btn {
+    width: 100%;
+    max-width: 236px;
+    height: 48px;
+    background: $darkCyan;    
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+    color: $white;
+    font-size: 14px;
+    font-family: "Montserrat-bold";
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        background: $darkGreen; 
+    }
+
+    @media(max-width: 767px) {
+        max-width: 295px;
+        margin: 20px auto 0;
+    }
+
+    .icon-cart {
+        background-image: url('../assets/icon-cart.svg');
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 14.39px;
+        height: 16px;
+        display: inline-block;  
+        margin-right: 11.6px;      
+        image-rendering: auto;          
+    }   
+}
